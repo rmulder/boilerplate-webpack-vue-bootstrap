@@ -1,0 +1,39 @@
+$white: #fff;
+$black: #000;
+$red: #d9534f;
+$orange: #f0ad4e;
+$yellow: #ffd500;
+$green: #5cb85c;
+$blue: #0099ff;
+$teal: #00eaff;
+$pink: #ff5b77;
+$purple: #613d7c;
+
+// Create grayscale
+$gray-dark: #333333;
+$gray: lighten(#333333, 20%);
+$gray-light: lighten(#333333, 35%);
+$gray-lighter: lighten(#333333, 50%);
+$gray-lightest: lighten(#333333, 65%);
+
+// Reassign color vars to semantic color scheme
+$brand-primary: #FF6246;
+$brand-success: $green;
+$brand-info: $teal;
+$brand-warning: $orange;
+$brand-danger: $red;
+$brand-inverse: $gray-dark;
+
+// Override Bootstrap variables
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-transitions: true;
+$enable-hover-media-query: false;
+$enable-grid-classes: true;
+$enable-print-styles: true;
+
+$icon-size: 20px;
+$duration: .4s;
+$easing: ease-in-out;
+$base-dimension: 3rem;

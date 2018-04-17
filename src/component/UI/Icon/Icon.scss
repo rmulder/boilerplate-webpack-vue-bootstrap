@@ -1,0 +1,84 @@
+@import '../../../scss/variables';
+@import '../../../scss/animations';
+
+.icon {
+
+  &.primary {
+    fill: $brand-primary;
+  }
+
+  &.warning {
+    fill: $brand-warning;
+  }
+
+  &.danger {
+    fill: $brand-danger;
+  }
+
+  &.info {
+    fill: $brand-info;
+  }
+
+  &.success {
+    fill: $brand-success;
+  }
+
+  &.white {
+    fill: $white;
+  }
+
+  &.inverse {
+    fill: $brand-inverse;
+  }
+
+  &.stroke-primary {
+    stroke: $brand-primary;
+    stroke-width: 4px;
+    fill: none;
+  }
+
+  &.stroke-warning {
+    stroke: $brand-warning;
+    stroke-width: 4px;
+    fill: none;
+  }
+
+  &.stroke-danger {
+    stroke: $brand-danger;
+    stroke-width: 4px;
+    fill: none;
+  }
+
+  &.stroke-info {
+    stroke: $brand-info;
+    stroke-width: 4px;
+    fill: none;
+  }
+
+  &.stroke-success {
+    stroke: $brand-success;
+    stroke-width: 4px;
+    fill: none;
+  }
+
+  &.stroke-white {
+    stroke: $white;
+    stroke-width: 4px;
+    fill: none;
+  }
+
+  &.stroke-inverse {
+    stroke: $brand-inverse;
+    stroke-width: 4px;
+    fill: none;
+  }
+
+  &.spinner {
+    animation: rotator ($duration * 4) linear infinite;
+
+    path {
+      transform-origin: center;
+      animation: colors ($duration * 4) $easing infinite;
+    }
+  }
+}

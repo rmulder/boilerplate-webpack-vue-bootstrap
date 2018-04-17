@@ -1,0 +1,47 @@
+@import "../../../scss/variables";
+
+.snackbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: $gray-dark;
+  color: $white;
+  min-height: $base-dimension;
+
+  .text {
+    position: absolute;
+    left: $base-dimension / 1;
+    right: 2 * $base-dimension + ($base-dimension / 1);
+    display: block;
+    text-align: start;
+    min-height: $base-dimension;
+    line-height: $base-dimension;
+  }
+
+  .btn {
+    position: absolute;
+    right: $base-dimension / 1;
+    width: 2 * $base-dimension;
+    height: $base-dimension;
+    line-height: $base-dimension;
+    padding: 0;
+  }
+
+  &.snackbar-message {
+    border-top: 2px solid $brand-primary;
+
+    .btn {
+      color: $brand-primary;
+    }
+  }
+
+  &.snackbar-error {
+    border-top: 2px solid $brand-danger;
+
+    .btn {
+      color: $brand-danger;
+    }
+  }
+}

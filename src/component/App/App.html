@@ -1,0 +1,8 @@
+<div id="app" ref="root">
+    <transition name="fade">
+        <router-view></router-view>
+    </transition>
+    <snack-bar :message="$store.state.error" type="error"></snack-bar>
+    <snack-bar :message="$store.state.message" type="message"></snack-bar>
+    <loading-dialog :loading="$store.state.loading"></loading-dialog>
+</div>

@@ -1,0 +1,6 @@
+<transition name="slide-bottom">
+    <div v-show="active" class="snackbar" :class="'snackbar-' + type">
+        <span class="text">{{ message }}</span>
+        <span class="btn" @click="dismiss">OK</span>
+    </div>
+</transition>
